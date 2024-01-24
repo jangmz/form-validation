@@ -9,27 +9,30 @@
 </head>
 <body>
     <div id="container">
-        <form>
+        <form id="form">
             <h1>Form validation</h1>
             <div class="input-field">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="text" name="email" id="email" placeholder="example@mail.com" required>
             </div>
             <div class="input-field">
                 <label for="country">Country</label>
-                <input type="text" name="country" id="country">
+                <input type="text" name="country" id="country" placeholder="Slovenia" required>
             </div>
             <div class="input-field">
                 <label for="zip-code">ZIP Code</label>
-                <input type="number" name="zip-code" id="zip-code">
+                <input type="number" name="zip-code" id="zip-code" placeholder="1000" required>
             </div>
             <div class="input-field">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" id="password" required>
             </div>
             <div class="input-field">
                 <label for="password2">Confirm password</label>
-                <input type="password" name="password2" id="password2">
+                <input type="password" name="password2" id="password2" required>
+            </div>
+            <div class="input-field">
+                <p class="instructions">Password requirements:<br>- 8 characters long<br>- 1 uppercase letter<br>- 1 number<br>- 1 special character (!, ?, *,...)</p>
             </div>
             <div class="input-field">
                 <button type="submit" name="submit" id="submit">Submit</button>

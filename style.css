@@ -44,6 +44,20 @@ form {
     font-size: 16px;
 }
 
+.input-field input:invalid {
+    border: 1px solid red;
+}
+
+.input-field input:valid {
+    border: 1px solid green;
+}
+
+.instructions {
+    font-size: 12px;
+    color: gray;
+    margin: 0;
+}
+
 .input-field button {
     width: 40%;
     margin: 21.44px;
